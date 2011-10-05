@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Used in app/menu examples -->
+	<string-array name="entries_list_preference">
+		<item>Automatico</item>
+		<item>Manual</item>
+
+	</string-array>
+
+	<!-- Used in app/menu examples -->
+	<string-array name="entryvalues_list_preference">
+		<item>automatico</item>
+		<item>manual</item>
+
+	</string-array>
+
+	<string-array name="languages_list_preference">
+		<item>Español</item>
+		<item>Inglés</item>
+	</string-array>
+	<string-array name="entrylanguages_list_preference">
+		<item>es</item>
+		<item>en</item>
+	</string-array>
+
+	<array name="languages">
+		<item>Español (es)</item>
+		<item>Inglés (en)</item>
+	</array>
+
+</resources>

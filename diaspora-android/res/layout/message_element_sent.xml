@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:background="@color/white">
+	<ImageView android:layout_width="wrap_content"
+		android:padding="2dip" android:layout_height="wrap_content"
+		android:src="@drawable/photo" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginRight="5dip" android:layout_weight="1"
+		android:layout_gravity="center_vertical" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_centerVertical="true" android:layout_height="wrap_content"
+			android:layout_alignParentRight="true" android:layout_gravity="right"
+			android:paddingLeft="10dip">
+			<TextView android:layout_width="wrap_content"
+
+				android:paddingRight="10dip" android:id="@+id/date_message_element_received"
+				android:layout_height="wrap_content" android:textColor="@color/black"
+				android:text="Sender"></TextView>
+			<TextView android:layout_width="fill_parent"
+				android:gravity="center" android:paddingRight="10dip"
+				android:id="@+id/date_message_element_received"
+				android:layout_height="wrap_content" android:textColor="@color/black"
+				android:text="date"></TextView>
+		</LinearLayout>
+		<TextView android:layout_width="fill_parent"
+			android:paddingLeft="10dip" android:id="@+id/message_sent_text"
+			android:text="Text of the message"
+			android:layout_marginTop="3dip" android:textColor="@color/black"
+			android:layout_height="wrap_content" android:gravity="left"></TextView>
+	</LinearLayout>
+	
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/Top25" android:title="TOP25" android:icon='@drawable/ic_delete' />
+	<item android:id="@+id/Trailers" android:title="Trailers"
+		android:icon='@drawable/ic_delete' />
+	<item android:id="@+id/Actores" android:title="Actores"
+		android:icon='@drawable/ic_delete' />
+	<item android:id="@+id/Entrar" android:title="Entrar" android:icon='@drawable/ic_delete' />
+	<item android:id="@+id/Directores" android:title="Directores"
+		android:icon='@drawable/ic_delete' />
+	<item android:id="@+id/SeriesTV" android:title="Series TV"
+		android:icon='@drawable/ic_delete' />
+	<item android:id="@+id/Blog" android:title="Blog" android:icon='@drawable/ic_delete' />
+
+</menu>

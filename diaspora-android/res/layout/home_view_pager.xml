@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+<!-- 	<RelativeLayout android:id="@+id/label_header" -->
+<!-- 		android:background="@drawable/home_actionbar" android:layout_width="fill_parent" -->
+<!-- 		android:layout_height="wrap_content"> -->
+<!-- 		<ImageView android:layout_width="wrap_content" android:id="@+id/logo_header" -->
+<!-- 			android:layout_height="wrap_content" android:src="@drawable/logo_large" -->
+<!-- 			android:layout_marginLeft="6dip" android:layout_centerVertical="true" /> -->
+<!-- 		<ImageView android:layout_width="wrap_content" android:id="@+id/new_comment_header" -->
+<!-- 			android:layout_height="wrap_content" android:src="@drawable/ic_menu_edit" -->
+<!-- 			android:layout_marginLeft="6dip" android:layout_centerVertical="true" -->
+<!-- 			android:layout_alignParentRight="true" android:background="@drawable/widget_elements_header"></ImageView> -->
+<!-- 	</RelativeLayout> -->
+	<com.jakewharton.android.viewpagerindicator.TitlePageIndicator
+		android:id="@+id/indicator" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@color/white"/>
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewpager" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1" />
+
+</LinearLayout>
