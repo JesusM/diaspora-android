@@ -27,8 +27,9 @@
 		<activity android:name=".ViewInbox"></activity>
 		<activity android:name=".NewMessage"></activity>
 		<activity android:name=".Dashboard"></activity>
-		<activity android:name=".HomeViewPager"></activity>
+		<activity android:name=".HomeViewPager" ></activity>
 		<activity android:name=".AdvancedPreferences"></activity>
+		<activity android:name=".Contacts"></activity>
 		<activity android:name=".Conversation"
 			android:windowSoftInputMode="adjustResize|stateHidden"></activity>
 		<activity android:name=".ActionBar"></activity>

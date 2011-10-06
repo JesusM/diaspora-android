@@ -1,67 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:background="@drawable/home_bg_plain">
+	 android:background="@color/white">
+<!-- android:background="@drawable/home_bg_plain" -->
+<!-- 	<RelativeLayout android:id="@+id/label_heaandroid:background="@color/white"der" -->
+<!-- 		android:background="@drawable/home_actionbar" android:layout_width="fill_parent" -->
+<!-- 		android:layout_height="wrap_content"> -->
+<!-- 		<ImageView android:layout_width="wrap_content" android:id="@+id/logo_header" -->
+<!-- 			android:layout_height="wrap_content" android:src="@drawable/logo_large" -->
+<!-- 			android:layout_marginLeft="6dip" android:layout_centerVertical="true" /> -->
 
-	<RelativeLayout android:id="@+id/label_header"
-		android:background="@drawable/home_actionbar" android:layout_width="fill_parent"
-		android:layout_height="wrap_content">
-		<ImageView android:layout_width="wrap_content" android:id="@+id/logo_header"
-			android:layout_height="wrap_content" android:src="@drawable/logo_large"
-			android:layout_marginLeft="6dip" android:layout_centerVertical="true" />
+<!-- 	</RelativeLayout> -->
 
-		<!--
-			<ImageView android:layout_width="wrap_content"
-			android:id="@+id/preferences_header"
-		-->
-		<!--
-			android:layout_height="wrap_content"
-			android:src="@drawable/ic_menu_preferences"
-		-->
-		<!--
-			android:layout_marginLeft="6dip" android:layout_centerVertical="true"
-		-->
-		<!--			android:layout_alignParentRight="true"></ImageView>-->
-<!--		<ImageView android:layout_width="wrap_content" android:id="@+id/new_comment_header"-->
-<!--			android:layout_height="wrap_content" android:src="@drawable/ic_menu_edit"-->
-<!--			android:layout_marginLeft="6dip" android:layout_centerVertical="true"-->
-<!--			android:layout_alignParentRight="true" android:background="@drawable/widget_elements_header"></ImageView>-->
-	</RelativeLayout>
-
-	<LinearLayout android:layout_width="fill_parent"
-		android:layout_below="@id/label_header" android:background="@color/white"
+	<LinearLayout android:layout_width="fill_parent" android:layout_marginBottom="3dip"
+		android:layout_below="@id/label_header" 
 		android:layout_height="fill_parent" android:orientation="vertical"
 		android:layout_weight="1">
+		<ImageView android:layout_width="match_parent" android:layout_gravity="center"
+			android:layout_height="fill_parent" android:src="@drawable/logo1"
+			android:layout_weight="1" android:paddingLeft="6dip" android:paddingRight="6dip"/>
 		<LinearLayout android:layout_width="fill_parent"
 			android:layout_height="fill_parent" android:orientation="horizontal"
 			android:layout_weight="1">
-			<RelativeLayout android:layout_width="fill_parent"
+			<LinearLayout android:layout_width="fill_parent"  android:orientation="vertical"
 				android:background="@drawable/background_selector" android:id="@+id/button1"
 				android:layout_height="fill_parent" android:layout_weight="1">
-				<ImageView android:layout_width="wrap_content"
-					android:background="@null" android:id="@+id/ImageB1"
+				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
+					android:background="@null" android:id="@+id/ImageB1" android:layout_weight="1"
 					android:layout_height="wrap_content" android:src="@drawable/home_grey"
 					android:layout_centerInParent="true" />
 				<TextView android:layout_width="fill_parent"
-					android:layout_marginTop="5dip" android:layout_centerHorizontal="true"
+					 android:layout_centerHorizontal="true"
 					android:text="Inicio" android:textColor="@color/black"
 					android:maxLines="1" android:gravity="center" android:layout_below="@id/ImageB1"
 					android:layout_height="wrap_content" android:textSize="18dip" />
-			</RelativeLayout>
+			</LinearLayout>
 
-			<RelativeLayout android:layout_width="fill_parent"
+			<LinearLayout android:layout_width="fill_parent"  android:orientation="vertical"
 				android:background="@drawable/background_selector" android:id="@+id/button2"
 				android:layout_height="fill_parent" android:layout_weight="1">
-				<ImageView android:layout_width="wrap_content"
-					android:background="@null" android:id="@+id/ImageB2"
+				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
+					android:background="@null" android:id="@+id/ImageB2" android:layout_weight="1"
 					android:layout_height="wrap_content" android:src="@drawable/contacts_grey"
 					android:layout_centerInParent="true" />
 				<TextView android:layout_width="fill_parent"
-					android:layout_marginTop="5dip" android:layout_centerHorizontal="true"
+					 android:layout_centerHorizontal="true"
 					android:text="Contactos" android:textColor="@color/black"
 					android:maxLines="1" android:gravity="center" android:layout_below="@id/ImageB2"
 					android:layout_height="wrap_content" android:textSize="18dip" />
-			</RelativeLayout>
+			</LinearLayout>
 
 			<!--
 				<LinearLayout android:layout_width="match_parent"
@@ -71,19 +58,19 @@
 			<!--				android:background="@color/lightgray"></LinearLayout>-->
 
 
-			<RelativeLayout android:layout_width="fill_parent"
+			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
 				android:id="@+id/button4" android:layout_height="fill_parent"
 				android:layout_weight="1" android:background="@drawable/background_selector">
-				<ImageView android:layout_width="wrap_content"
-					android:background="@null" android:id="@+id/ImageB4"
+				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
+					android:background="@null" android:id="@+id/ImageB4" android:layout_weight="1"
 					android:layout_height="wrap_content" android:src="@drawable/perfil"
 					android:layout_centerInParent="true" />
 				<TextView android:layout_width="fill_parent"
-					android:layout_marginTop="5dip" android:layout_centerHorizontal="true"
+					 android:layout_centerHorizontal="true"
 					android:text="Perfil" android:textColor="@color/black"
 					android:maxLines="1" android:gravity="center" android:layout_below="@id/ImageB4"
 					android:layout_height="wrap_content" android:textSize="18dip" />
-			</RelativeLayout>
+			</LinearLayout>
 
 
 		</LinearLayout>
@@ -91,33 +78,33 @@
 			android:layout_height="fill_parent" android:orientation="horizontal"
 			android:layout_weight="1">
 
-			<RelativeLayout android:layout_width="fill_parent"
+			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
 				android:background="@drawable/background_selector" android:id="@+id/button3"
 				android:layout_height="fill_parent" android:layout_weight="1">
-				<ImageView android:layout_width="wrap_content"
-					android:background="@null" android:id="@+id/ImageB3"
+				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
+					android:background="@null" android:id="@+id/ImageB3" android:layout_weight="1"
 					android:layout_height="wrap_content" android:src="@drawable/notifications_grey"
 					android:layout_centerInParent="true" />
 				<TextView android:layout_width="fill_parent"
-					android:layout_marginTop="5dip" android:layout_centerHorizontal="true"
-					android:text="0 notificaciones" android:textColor="@color/black"
+					 android:layout_centerHorizontal="true"
+					android:text="@string/no_new_notifications" android:textColor="@color/black"
 					android:gravity="center" android:layout_below="@id/ImageB3"
 					android:layout_height="wrap_content" android:textSize="18dip" />
-			</RelativeLayout>
+			</LinearLayout>
 
-			<RelativeLayout android:layout_width="fill_parent"
+			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
 				android:id="@+id/button5" android:layout_height="fill_parent"
 				android:layout_weight="1" android:background="@drawable/background_selector">
-				<ImageView android:layout_width="wrap_content"
-					android:background="@null" android:id="@+id/ImageB5"
+				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
+					android:background="@null" android:id="@+id/ImageB5" android:layout_weight="1"
 					android:layout_height="wrap_content" android:src="@drawable/mail_grey"
 					android:layout_centerInParent="true" />
 				<TextView android:layout_width="fill_parent"
-					android:layout_marginTop="5dip" android:layout_centerHorizontal="true"
-					android:text="0 mensajes nuevos" android:textColor="@color/black"
+					 android:layout_centerHorizontal="true"
+					android:text="@string/no_new_messages" android:textColor="@color/black"
 					android:gravity="center" android:layout_below="@id/ImageB5"
 					android:layout_height="wrap_content" android:textSize="18dip" />
-			</RelativeLayout>
+			</LinearLayout>
 
 			<!--
 				<LinearLayout android:layout_width="match_parent"
@@ -127,11 +114,11 @@
 			<!--				android:background="@color/lightgray"></LinearLayout>-->
 
 
-			<RelativeLayout android:layout_width="fill_parent"
+			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
 				android:background="@drawable/background_selector" android:id="@+id/button6"
 				android:layout_height="fill_parent" android:layout_weight="1">
-				<ImageView android:layout_width="wrap_content"
-					android:background="@null" android:id="@+id/ImageB6"
+				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
+					android:background="@null" android:id="@+id/ImageB6" android:layout_weight="1"
 					android:layout_height="wrap_content" android:src="@null"
 					android:layout_centerInParent="true" />
 				<TextView android:layout_width="fill_parent"
@@ -139,7 +126,7 @@
 					android:text="" android:textColor="@color/black" android:maxLines="1"
 					android:gravity="center" android:layout_below="@id/ImageB6"
 					android:layout_height="wrap_content" />
-			</RelativeLayout>
+			</LinearLayout>
 
 
 

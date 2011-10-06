@@ -1,6 +1,7 @@
 package me.jesus.diaspora_android;
 
 import greendroid.app.GDActivity;
+import greendroid.widget.ActionBar;
 import greendroid.widget.ActionBarItem;
 import greendroid.widget.ActionBarItem.Type;
 
@@ -29,6 +30,7 @@ public class HomeViewPager extends GDActivity {
 		
 		setActionBarContentView(R.layout.home_view_pager);
 		setTitle("Updates");
+//		getActionBar().setType(ActionBar.Type.Dashboard);
         addActionBarItem(Type.Compose, ACTION_BAR_INFO);
 //		ViewPagerAdapter adapter = new ViewPagerAdapter(this);
 		ViewPagerAdapter adapter = new ViewPagerAdapter(this,new String [] {"Friends","All aspects","Contacts"});

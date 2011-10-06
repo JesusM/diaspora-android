@@ -1,5 +1,9 @@
 package me.jesus.diaspora_android;
 
+import greendroid.app.GDActivity;
+import greendroid.widget.ActionBar;
+import greendroid.widget.ActionBarItem;
+import greendroid.widget.ActionBarItem.Type;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,22 +21,23 @@ public class Dashboard extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.dashboard);
-		findViewById(R.id.button6).setEnabled(false);
-		findViewById(R.id.logo_header).setOnClickListener(
-				new OnClickListener() {
-
-					@Override
-					public void onClick(View arg0) {
-						// TODO Auto-generated method stub
-						startActivity(new Intent(Dashboard.this,
-								NewMessage.class));
-					}
-				});
+//		getActionBar().setType(ActionBar.Type.Dashboard);
+//		findViewById(R.id.button6).setEnabled(false);
+//		findViewById(R.id.logo_header).setOnClickListener(
+//				new OnClickListener() {
+//
+//					@Override
+//					public void onClick(View arg0) {
+//						// TODO Auto-generated method stub
+//						startActivity(new Intent(Dashboard.this,
+//								NewMessage.class));
+//					}
+//				});
 		findViewById(R.id.button2).setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-
+				startActivity(new Intent(Dashboard.this,Contacts.class));
 			}
 		});
 		findViewById(R.id.button3).setOnClickListener(new OnClickListener() {

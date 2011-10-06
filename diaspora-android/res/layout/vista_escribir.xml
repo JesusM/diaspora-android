@@ -10,7 +10,7 @@
 
 
 		<Button android:layout_width="wrap_content" android:id="@+id/share"
-			android:text="Share" android:textColor="@color/white"
+			android:text="@string/share" android:textColor="@color/white"
 			android:background="@drawable/widgets_kennedy_blue_button_default"
 			android:layout_height="wrap_content" android:layout_marginLeft="6dip"
 			android:layout_marginRight="6dip" android:padding="5dip"
@@ -19,7 +19,7 @@
 			android:paddingLeft="6dip" android:layout_centerVertical="true"
 			android:layout_alignParentLeft="true" android:textSize="20dip"
 			android:gravity="center_vertical" android:layout_height="wrap_content"
-			android:text="What's on your mind?" android:textColor="@color/white"
+			android:text="@string/on_your_mind" android:textColor="@color/white"
 			android:layout_toLeftOf="@id/share" android:textStyle="bold"
 			android:layout_gravity="left|center_vertical" />
 
@@ -34,7 +34,7 @@
 			android:textAppearance="?android:attr/textAppearanceMedium"
 			android:layout_height="80px"></EditText>
 
-		<CheckBox android:layout_width="fill_parent" android:text="make public"
+		<CheckBox android:layout_width="fill_parent" android:text="@string/make_public"
 			android:layout_gravity="center_vertical" android:id="@+id/make_public"
 			android:textColor="@color/black" android:layout_height="wrap_content"></CheckBox>
 
@@ -42,7 +42,7 @@
 		<TextView android:layout_width="fill_parent"
 			android:layout_marginTop="20px" android:layout_height="wrap_content"
 			android:textColor="@color/dkgray" android:textStyle="bold"
-			android:gravity="left" android:text="Choose services"
+			android:gravity="left" android:text="@string/choose_services"
 			android:layout_marginBottom="10dip"></TextView>
 		<LinearLayout android:layout_width="fill_parent"
 			android:id="@+id/layoutaAnadir" android:orientation="vertical"

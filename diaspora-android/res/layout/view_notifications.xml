@@ -10,7 +10,7 @@
 			<TextView android:layout_width="fill_parent" android:paddingLeft="6dip"
 				android:layout_centerVertical="true" android:layout_alignParentLeft="true"
 				android:textSize="20dip" android:gravity="center_vertical"
-				android:layout_height="wrap_content" android:text="Notifications"
+				android:layout_height="wrap_content" android:text="@string/notifications"
 				android:textColor="@color/white" android:textStyle="bold"
 				android:layout_gravity="left|center_vertical" />
 

@@ -38,19 +38,19 @@
 					android:layout_height="wrap_content" android:layout_width="fill_parent"
 					android:orientation="vertical">
 					<EditText android:id="@+id/user" android:layout_width="fill_parent"
-						android:layout_height="41dip" android:hint='User name'
+						android:layout_height="41dip" android:hint='@string/user_name'
 						android:background="@drawable/my_border_open_bottom_log_in"
 						android:layout_gravity="center" android:gravity="center">
 					</EditText>
 					<EditText android:id="@+id/pass" android:layout_width="fill_parent"
 						android:layout_height="41dip" android:password='true'
-						android:hint='Password' android:background="@drawable/my_border_open_top_log_in"
+						android:hint='@string/password' android:background="@drawable/my_border_open_top_log_in"
 						android:gravity="center">
 					</EditText>
 				</LinearLayout>
 
 				<TextView android:layout_width="fill_parent" android:id='@+id/cartel2'
-					android:text="Don't remember your password?"
+					android:text="@string/forgot_password"
 					android:layout_weight="1" android:layout_height="wrap_content"
 					android:gravity="center" android:textSize='14dip'
 					android:layout_marginRight='17dip' android:layout_marginLeft='17dip'
@@ -62,7 +62,7 @@
 					android:paddingTop="5dip" android:layout_gravity="center"
 					android:paddingBottom="5dip" android:layout_height="wrap_content"
 					android:paddingLeft="28px" android:paddingRight="28px"
-					android:text="Log in" android:textStyle="bold"
+					android:text="@string/log_in" android:textStyle="bold"
 					android:gravity='center_horizontal|center_vertical'
 					android:textColor='@color/white' android:background="@drawable/widget_login_selector">
 				</Button>
