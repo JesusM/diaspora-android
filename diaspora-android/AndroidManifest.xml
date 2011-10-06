@@ -10,7 +10,8 @@
 		android:name=".ActionBarApplication" android:theme="@style/Theme.GDActionBarExample"
 		android:label="@string/app_name">
 		<activity android:name=".Login" android:windowSoftInputMode="adjustResize|stateHidden"
-			android:configChanges="orientation" android:label="@string/app_name">
+			android:label="@string/app_name">
+<!-- 			android:configChanges="orientation" -->
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
@@ -27,7 +28,7 @@
 		<activity android:name=".ViewInbox"></activity>
 		<activity android:name=".NewMessage"></activity>
 		<activity android:name=".Dashboard"></activity>
-		<activity android:name=".HomeViewPager" ></activity>
+		<activity android:name=".HomeViewPager"></activity>
 		<activity android:name=".AdvancedPreferences"></activity>
 		<activity android:name=".Contacts"></activity>
 		<activity android:name=".Conversation"

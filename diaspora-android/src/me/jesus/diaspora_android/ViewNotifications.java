@@ -3,6 +3,8 @@
  */
 package me.jesus.diaspora_android;
 
+import greendroid.app.GDActivity;
+
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +25,7 @@ import android.widget.Toast;
  * @author jesus
  * 
  */
-public class ViewNotifications extends Activity {
+public class ViewNotifications extends GDActivity {
 	// Example of notifications
 	List<List<Notify>> notifications = new ArrayList<List<Notify>>();
 	private int number_of_not = 0;
@@ -31,17 +33,19 @@ public class ViewNotifications extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.view_notifications);
-		Toast.makeText(getBaseContext(), "example of notifications", Toast.LENGTH_LONG).show();
-		// load the simulated notifications
+//		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setActionBarContentView(R.layout.view_notifications);
 		loadSimulatedNotifys();
 
 		for (int i = 0; i < notifications.size(); i++) {
 			number_of_not += notifications.get(i).size();
 		}
-		((TextView) findViewById(R.id.number_of_notifications))
-				.setText(number_of_not + "");
+		setTitle("5 new "+getResources().getString(R.string.notifications));
+		Toast.makeText(getBaseContext(), "example of notifications", Toast.LENGTH_LONG).show();
+		// load the simulated notifications
+		
+//		((TextView) findViewById(R.id.number_of_notifications))
+//				.setText(number_of_not + "");
 		// load the interface depedient of the simulated notifications
 		loadInterface();
 

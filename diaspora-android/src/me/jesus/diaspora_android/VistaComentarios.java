@@ -1,5 +1,9 @@
 package me.jesus.diaspora_android;
 
+import greendroid.app.GDActivity;
+import greendroid.widget.ActionBar;
+
+
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +23,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class VistaComentarios extends Activity {
+public class VistaComentarios extends GDActivity {
 	/** Called when the activity is first created. */
 	List<Comentario> lista = new ArrayList<Comentario>();
 	boolean oculto = false;
@@ -28,8 +32,9 @@ public class VistaComentarios extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.view_comment);
-//		setTitle("Comments");
+		setActionBarContentView(R.layout.view_comment);
+		getActionBar().setType(ActionBar.Type.Dashboard);
+		setTitle(getResources().getString(R.string.comments));
 		Toast.makeText(getBaseContext(), "example responses of a comment", Toast.LENGTH_LONG).show();
 		rellenarListaComentarios();
 		/**

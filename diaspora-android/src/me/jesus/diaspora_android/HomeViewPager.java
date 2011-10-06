@@ -41,8 +41,8 @@ public class HomeViewPager extends GDActivity {
 		pager.setAdapter(adapter);
 //		pager.setCurrentItem(2);
 		indicator.setViewPager(pager);
-		indicator.setCurrentItem(2);
-		pager.setCurrentItem(2);
+		indicator.setCurrentItem(1);
+		pager.setCurrentItem(1);
 //		findViewById(R.id.new_comment_header).setOnClickListener(new OnClickListener(){
 //
 //			@Override

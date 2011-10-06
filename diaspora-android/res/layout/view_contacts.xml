@@ -18,7 +18,7 @@
 <!-- 			android:layout_centerVertical="true" android:layout_alignParentRight="true"></Button> -->
 <!-- 	</RelativeLayout> -->
 	<LinearLayout android:layout_width="match_parent" android:paddingLeft="4dip" android:id="@+id/contacts"
-		android:orientation="vertical" android:layout_height="wrap_content"
+		android:orientation="vertical" android:layout_height="wrap_content" android:layout_marginTop="25dip"
 		android:gravity="center_vertical" android:layout_gravity="center|center_vertical">
 		
 	</LinearLayout>
