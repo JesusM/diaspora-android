@@ -1,138 +1,292 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	 android:background="@color/white">
-<!-- android:background="@drawable/home_bg_plain" -->
-<!-- 	<RelativeLayout android:id="@+id/label_heaandroid:background="@color/white"der" -->
-<!-- 		android:background="@drawable/home_actionbar" android:layout_width="fill_parent" -->
-<!-- 		android:layout_height="wrap_content"> -->
-<!-- 		<ImageView android:layout_width="wrap_content" android:id="@+id/logo_header" -->
-<!-- 			android:layout_height="wrap_content" android:src="@drawable/logo_large" -->
-<!-- 			android:layout_marginLeft="6dip" android:layout_centerVertical="true" /> -->
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
 
-<!-- 	</RelativeLayout> -->
+    <RelativeLayout
+        android:id="@+id/label_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dkgray"
+        android:padding="8dip" >
 
-	<LinearLayout android:layout_width="fill_parent" android:layout_marginBottom="3dip"
-		android:layout_below="@id/label_header" 
-		android:layout_height="fill_parent" android:orientation="vertical"
-		android:layout_weight="1">
-		<ImageView android:layout_width="match_parent" android:layout_gravity="center"
-			android:layout_height="fill_parent" android:src="@drawable/logo1"
-			android:layout_weight="1" android:paddingLeft="6dip" android:paddingRight="6dip"/>
-		<LinearLayout android:layout_width="fill_parent"
-			android:layout_height="fill_parent" android:orientation="horizontal"
-			android:layout_weight="1">
-			<LinearLayout android:layout_width="fill_parent"  android:orientation="vertical"
-				android:background="@drawable/background_selector" android:id="@+id/button1"
-				android:layout_height="fill_parent" android:layout_weight="1">
-				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
-					android:background="@null" android:id="@+id/ImageB1" android:layout_weight="1"
-					android:layout_height="wrap_content" android:src="@drawable/home_grey"
-					android:layout_centerInParent="true" />
-				<TextView android:layout_width="fill_parent"
-					 android:layout_centerHorizontal="true"
-					android:text="Inicio" android:textColor="@color/black"
-					android:maxLines="1" android:gravity="center" android:layout_below="@id/ImageB1"
-					android:layout_height="wrap_content" android:textSize="18dip" />
-			</LinearLayout>
+        <ImageView
+            android:id="@+id/logo_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:src="@drawable/logo_large" />
 
-			<LinearLayout android:layout_width="fill_parent"  android:orientation="vertical"
-				android:background="@drawable/background_selector" android:id="@+id/button2"
-				android:layout_height="fill_parent" android:layout_weight="1">
-				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
-					android:background="@null" android:id="@+id/ImageB2" android:layout_weight="1"
-					android:layout_height="wrap_content" android:src="@drawable/contacts_grey"
-					android:layout_centerInParent="true" />
-				<TextView android:layout_width="fill_parent"
-					 android:layout_centerHorizontal="true"
-					android:text="Contactos" android:textColor="@color/black"
-					android:maxLines="1" android:gravity="center" android:layout_below="@id/ImageB2"
-					android:layout_height="wrap_content" android:textSize="18dip" />
-			</LinearLayout>
+        <!-- <ImageView -->
+        <!-- android:id="@+id/preferences_header" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_alignParentRight="true" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:src="@drawable/ic_menu_preferences" > -->
+        <!-- </ImageView> -->
+    </RelativeLayout>
 
-			<!--
+    <RelativeLayout
+        android:id="@+id/button3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dkgray"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip" >
+
+        <ImageView
+            android:id="@+id/asterisk_notif"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/notifications_grey_blue" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/asterisk_notif"
+            android:text="Notifications"
+            android:textColor="@color/white"
+            android:textSize="17dip" />
+
+        <TextView
+            android:id="@+id/number_of_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3dip"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/square_notifications_gray"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="0"
+            android:textColor="@color/dkgray"
+            android:textSize="25dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/button3"
+        android:layout_below="@id/label_header"
+        android:layout_marginBottom="3dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_selector"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:src="@drawable/home_grey" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ImageB1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Inicio"
+                    android:textColor="@color/black"
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_selector"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:src="@drawable/contacts_grey" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ImageB2"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Contactos"
+                    android:textColor="@color/black"
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <!--
 				<LinearLayout android:layout_width="match_parent"
 				android:layout_marginLeft="20dip"
-			-->
-			<!--				android:layout_gravity="right" android:layout_height="2dip"-->
-			<!--				android:background="@color/lightgray"></LinearLayout>-->
+            -->
+            <!-- android:layout_gravity="right" android:layout_height="2dip" -->
+            <!-- android:background="@color/lightgray"></LinearLayout> -->
+
+            <LinearLayout
+                android:id="@+id/button4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_selector"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:src="@drawable/perfil" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ImageB4"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Perfil"
+                    android:textColor="@color/black"
+                    android:textSize="18dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_selector"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ImageB5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:src="@drawable/mail_grey" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ImageB5"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/no_new_messages"
+                    android:textColor="@color/black"
+                    android:textSize="18dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <LinearLayout -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:orientation="horizontal" > -->
 
 
-			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
-				android:id="@+id/button4" android:layout_height="fill_parent"
-				android:layout_weight="1" android:background="@drawable/background_selector">
-				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
-					android:background="@null" android:id="@+id/ImageB4" android:layout_weight="1"
-					android:layout_height="wrap_content" android:src="@drawable/perfil"
-					android:layout_centerInParent="true" />
-				<TextView android:layout_width="fill_parent"
-					 android:layout_centerHorizontal="true"
-					android:text="Perfil" android:textColor="@color/black"
-					android:maxLines="1" android:gravity="center" android:layout_below="@id/ImageB4"
-					android:layout_height="wrap_content" android:textSize="18dip" />
-			</LinearLayout>
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/button3" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/background_selector" -->
+        <!-- android:orientation="vertical" > -->
 
 
-		</LinearLayout>
-		<LinearLayout android:layout_width="fill_parent"
-			android:layout_height="fill_parent" android:orientation="horizontal"
-			android:layout_weight="1">
-
-			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
-				android:background="@drawable/background_selector" android:id="@+id/button3"
-				android:layout_height="fill_parent" android:layout_weight="1">
-				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
-					android:background="@null" android:id="@+id/ImageB3" android:layout_weight="1"
-					android:layout_height="wrap_content" android:src="@drawable/notifications_grey"
-					android:layout_centerInParent="true" />
-				<TextView android:layout_width="fill_parent"
-					 android:layout_centerHorizontal="true"
-					android:text="@string/no_new_notifications" android:textColor="@color/black"
-					android:gravity="center" android:layout_below="@id/ImageB3"
-					android:layout_height="wrap_content" android:textSize="18dip" />
-			</LinearLayout>
-
-			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
-				android:id="@+id/button5" android:layout_height="fill_parent"
-				android:layout_weight="1" android:background="@drawable/background_selector">
-				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
-					android:background="@null" android:id="@+id/ImageB5" android:layout_weight="1"
-					android:layout_height="wrap_content" android:src="@drawable/mail_grey"
-					android:layout_centerInParent="true" />
-				<TextView android:layout_width="fill_parent"
-					 android:layout_centerHorizontal="true"
-					android:text="@string/no_new_messages" android:textColor="@color/black"
-					android:gravity="center" android:layout_below="@id/ImageB5"
-					android:layout_height="wrap_content" android:textSize="18dip" />
-			</LinearLayout>
-
-			<!--
-				<LinearLayout android:layout_width="match_parent"
-				android:layout_marginRight="20dip"
-			-->
-			<!--				android:layout_gravity="right" android:layout_height="2dip"-->
-			<!--				android:background="@color/lightgray"></LinearLayout>-->
+        <!-- <ImageView -->
+        <!-- android:id="@+id/ImageB3" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerInParent="true" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@null" -->
+        <!-- android:src="@drawable/notifications_grey" /> -->
 
 
-			<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
-				android:background="@drawable/background_selector" android:id="@+id/button6"
-				android:layout_height="fill_parent" android:layout_weight="1">
-				<ImageView android:layout_width="wrap_content" android:layout_gravity="center"
-					android:background="@null" android:id="@+id/ImageB6" android:layout_weight="1"
-					android:layout_height="wrap_content" android:src="@null"
-					android:layout_centerInParent="true" />
-				<TextView android:layout_width="fill_parent"
-					android:layout_marginTop="5dip" android:layout_centerHorizontal="true"
-					android:text="" android:textColor="@color/black" android:maxLines="1"
-					android:gravity="center" android:layout_below="@id/ImageB6"
-					android:layout_height="wrap_content" />
-			</LinearLayout>
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_below="@id/ImageB3" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:gravity="center" -->
+        <!-- android:text="@string/no_new_notifications" -->
+        <!-- android:textColor="@color/black" -->
+        <!-- android:textSize="18dip" /> -->
+        <!-- </LinearLayout> -->
 
 
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/button6" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="fill_parent" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@drawable/background_selector" -->
+        <!-- android:orientation="vertical" > -->
 
-		</LinearLayout>
 
-	</LinearLayout>
+        <!-- <ImageView -->
+        <!-- android:id="@+id/ImageB6" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerInParent="true" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:background="@null" -->
+        <!-- android:src="@null" /> -->
 
+
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_below="@id/ImageB6" -->
+        <!-- android:layout_centerHorizontal="true" -->
+        <!-- android:layout_marginTop="5dip" -->
+        <!-- android:gravity="center" -->
+        <!-- android:maxLines="1" -->
+        <!-- android:text="" -->
+        <!-- android:textColor="@color/black" /> -->
+        <!-- </LinearLayout> -->
+        <!-- </LinearLayout> -->
+    </LinearLayout>
 
 </RelativeLayout>

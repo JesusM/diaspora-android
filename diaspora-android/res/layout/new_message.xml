@@ -3,8 +3,8 @@
 	android:orientation="vertical" android:layout_width="fill_parent"
 	android:layout_height="fill_parent" android:background="@color/white">
 	<RelativeLayout android:id="@+id/label_header"
-		android:background="@drawable/home_actionbar" android:layout_width="fill_parent"
-		android:layout_height="wrap_content">
+		android:background="@color/dkgray" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="4dip">
 		<TextView android:layout_width="fill_parent"
 			android:paddingLeft="6dip" android:layout_centerVertical="true"
 			android:layout_alignParentLeft="true" android:textSize="20dip"
